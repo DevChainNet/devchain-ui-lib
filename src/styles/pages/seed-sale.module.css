@@ -1,0 +1,384 @@
+.sectionseedsale {
+
+}
+
+.seedsale {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-large);
+  background-color: var(--color-gunmetal);
+  box-shadow: var(--shadow-black);
+  color: var(--color-grey);
+  width: 100%;
+  max-width: 1920px;
+}
+
+@media screen and (max-width: 950px) {
+  .seedsale {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.seedsale-header {
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  box-shadow: var(--color-charleston) 0px -220px 100px -50px inset;
+}
+
+.seedsale-header-bgimage {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: .1;
+  z-index: -1;
+}
+
+.seedsale-header-img {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.seedsale-header-title {
+  margin-top: 1.8rem;
+  font-size: 36px; font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.seedsale-header-price {
+  margin-top: .2rem;
+  font-size: 18px;
+}
+
+.seedsale-header-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.8rem;
+}
+
+.seedsale-header-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  margin: 0 .6rem;
+  transition: all .3s ease;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.seedsale-header-socials-link:hover {
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+.seedsale-header-socials-link > svg {
+  width: 18px; height: 18px;
+}
+
+.seedsale-txn {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+}
+
+.seedsale-txn-countdown {
+  text-align: center;
+}
+
+.seedsale-txn-info {
+  margin-top: 2rem;
+  text-align: center;
+  color: var(--color-azure);
+  font-weight: 600;
+}
+
+.seedsale-txn-countdown-title {
+  font-size: 22px; font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.seedsale-txn-countdown-values {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.seedsale-txn-countdown-values-box {
+  background-color: var(--color-onyx);
+  border-radius: var(--border-radius);
+  width: 48px; height: 48px;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px; font-weight: 600;
+}
+
+.seedsale-txn-countdown-values-dots {
+  font-size: 18px; font-weight: 600;
+}
+
+@media screen and (max-width: 650px) {
+  .seedsale-txn-countdown-values-box {
+    width: 45px; height: 45px;
+    margin: 0 .8rem;
+  }
+}
+
+.seedsale-txn-progressarea {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seedsale-txn-progressarea-child {
+  width: 400px;
+}
+
+@media screen and (max-width: 950px) {
+  .seedsale-txn-progressarea-child {
+    width: 100%;
+  }
+}
+
+.seedsale-txn-progressarea-child-amounts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+.seedsale-txn-progressarea-child-bar {
+  margin-top: .2rem;
+  height: 22px;
+  border-radius: 13px;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--color-charleston);
+}
+
+.seedsale-txn-progressarea-child-bar-progress {
+  position: absolute;
+  left: 0; top: 0;
+  width: 0; height: 100%;
+  background-color: var(--color-azure);
+  transition: all .8s ease;
+  box-shadow: var(--shadow-azure);
+
+  /*
+  background-color: #4158D0;
+  background-image: linear-gradient(270deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  */
+}
+
+.seedsale-txn-progressarea-child-bar-progress-reflection {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all .3s ease;
+  position: absolute;
+  left: 0; top: 0;
+  width: 0; height: 100%;
+  animation: reflection 2.2s infinite ease;
+}
+
+@keyframes reflection {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.01);
+  }
+}
+
+.seedsale-txn-progressarea-child-knobarea {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seedsale-txn-progressarea-child-knobarea-knob {
+  position: relative;
+  width: 270px; height: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  .seedsale-txn-progressarea-child-knobarea-knob {
+    width: 90%;
+  }
+}
+
+.seedsale-txn-progressarea-child-knobarea-knob-amounts {
+  position: absolute;
+  left: 0; top: -30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+.seedsale-txn-progressarea-child-knobarea-knob-line {
+  background-color: var(--color-charleston);
+  position: absolute;
+  left: 0; top: 50%;
+  transform: translate(0, -50%);
+  height: 3px; width: 100%;
+}
+
+.seedsale-txn-progressarea-child-knobarea-knob-amounts-min {
+
+}
+
+.seedsale-txn-progressarea-child-knobarea-knob-amounts-max {
+
+}
+
+@media screen and (max-width: 950px) {
+  .seedsale-txn-progressarea-child-knobarea-knob-amounts-max-label {
+    right: 0; top: -10px;
+    left: auto;
+  }  
+}
+
+.seedsale-txn-progressarea-child-knobarea-knob-edge {
+  position: absolute;
+  left: 0; top: 0;
+  width: 2px; height: 100%;
+  background-color: var(--color-charleston);
+  border-radius: 3px;
+}
+
+.seedsale-txn-progressarea-child-knobarea-knob-edge1 { left: 0; }
+.seedsale-txn-progressarea-child-knobarea-knob-edge2 { left: 25%; }
+.seedsale-txn-progressarea-child-knobarea-knob-edge3 { left: 50%; }
+.seedsale-txn-progressarea-child-knobarea-knob-edge4 { left: 75%; }
+.seedsale-txn-progressarea-child-knobarea-knob-edge5 { left: 100%; }
+
+.seedsale-txn-progressarea-child-knobarea-knob-cursor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0; top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.seedsale-txn-progressarea-child-knobarea-knob-cursor-button {
+  width: 24px; height: 24px;
+}
+
+.seedsale-txn-progressarea-child-knobarea-knob-cursor-amount {
+  position: absolute;
+  left: 50%; bottom: -20px;
+  font-size: 15px;
+  transform: translate(-50%, 0);
+  white-space: nowrap;
+}
+
+.seedsale-txn-progressarea-child-knobarea-knob-cursor-pointer {
+  position: absolute;
+  left: -.4rem; top: calc(80%);
+  width: 40px; height: 40px;
+  color: white;
+  z-index: 1;
+  visibility: hidden;
+  animation: knob-pointer 2.5s ease;
+}
+
+@keyframes knob-pointer {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(40px, 0);
+    visibility: hidden;
+  }
+}
+
+.seedsale-txn-progressarea-child-inputarea {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seedsale-txn-progressarea-child-inputarea-ctr {
+  width: 270px;
+  background-color: var(--color-charleston);
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+  .seedsale-txn-progressarea-child-inputarea-ctr {
+    width: 90%;
+  }
+}
+
+.seedsale-txn-progressarea-child-inputarea-ctr-input {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  color: var(--color-grey);
+  background-color: transparent;
+  padding: .6rem;
+}
+
+.seedsale-txn-progressarea-child-inputarea-ctr-inputerror {
+  color: var(--color-red);
+}
+
+.seedsale-txn-progressarea-child-inputarea-ctr-symbol {
+  margin: 0 .6rem;
+}
+
+.seedsale-txn-progressarea-child-buttonarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.seedsale-txn-progressarea-child-buttonarea-button {
+  padding: .7rem 2rem;
+  border-radius: var(--border-radius);
+  background-color: var(--color-azure);
+  box-shadow: var(--shadow-azure);
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  .seedsale-txn-progressarea-child-buttonarea-button {
+    width: 100%;
+    padding: .7rem 0;
+  }
+}
+
+.seedsale-txn-progressarea-child-buttonarea-buttondisabled {
+  background-color: var(--color-charleston);
+  box-shadow: none;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: auto;
+}

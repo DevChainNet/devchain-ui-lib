@@ -1,0 +1,208 @@
+.sectionsignin {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 650px) {
+  .sectionsignin {
+    display: block;
+  }
+}
+
+/* SIGNIN COMPONENT */
+.signin {
+  border-radius: var(--border-radius-large);
+  background-color: var(--color-gunmetal);
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 464px;
+  color: var(--color-grey);
+}
+
+@media screen and (max-width: 650px) {
+  .signin {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+.signin-title {
+  text-align: center;
+}
+
+.signin-input {
+  margin-top: 1.2rem;
+}
+
+.signin-input-title {
+  font-weight: 600;
+  margin-bottom: .2rem;
+}
+
+.signin-input > input {
+  color: var(--color-grey);
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: .6rem;
+  background-color: transparent;
+  background-color: var(--color-charleston);
+  font-size: 17px;
+  width: 100%;
+}
+
+.signin-buttonarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.signin-buttonarea-button {
+  border-radius: var(--border-radius);
+  color: white;
+  padding: .6rem 3rem;
+  background-color: var(--color-azure);
+  box-shadow: var(--shadow-azure);
+  cursor: pointer;
+  font-size: 17px; font-weight: 600;
+  transition: all .3s ease;
+}
+
+@media screen and (max-width: 650px) {
+  .signin-buttonarea-button {
+    width: 100%;
+  }
+}
+
+.signin-buttonarea-buttondisabled {
+  background-color: var(--color-charleston);
+  cursor: auto;
+  box-shadow: none;
+}
+
+.signin-forgot {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.signin-forgot > a {
+  color: var(--color-azure);
+  cursor: pointer;
+}
+
+.signin-forgot > a:hover {
+  text-decoration: underline;
+}
+
+.signin-switch {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.signin-switch > a {
+  color: var(--color-azure);
+  cursor: pointer;
+}
+
+.signin-switch > a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* FORGOT PASSWORD */
+
+
+.passwordforgot {
+  border-radius: var(--border-radius-large);
+  background-color: var(--color-gunmetal);
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 464px;
+  color: var(--color-grey);
+}
+
+@media screen and (max-width: 650px) {
+  .passwordforgot {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+.passwordforgot-title {
+  text-align: center;
+}
+
+.passwordforgot-input {
+  margin-top: 1.2rem;
+}
+
+.passwordforgot-input-title {
+  font-weight: 600;
+  margin-bottom: .2rem;
+}
+
+.passwordforgot-input > input {
+  color: var(--color-grey);
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: .6rem;
+  background-color: transparent;
+  background-color: var(--color-charleston);
+  font-size: 17px;
+  width: 100%;
+}
+
+.passwordforgot-desc {
+  margin-top: .2rem;
+  font-size: 14px; color: rgba(255, 255, 255, 0.4);
+}
+
+.passwordforgot-buttonarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.passwordforgot-buttonarea-button {
+  border-radius: var(--border-radius);
+  color: white;
+  padding: .6rem 3rem;
+  background-color: var(--color-azure);
+  box-shadow: var(--shadow-azure);
+  cursor: pointer;
+  font-size: 17px; font-weight: 600;
+  transition: all .3s ease;
+}
+
+@media screen and (max-width: 650px) {
+  .passwordforgot-buttonarea-button {
+    width: 100%;
+  }
+}
+
+.passwordforgot-buttonarea-buttondisabled {
+  background-color: var(--color-charleston);
+  cursor: auto;
+  box-shadow: none;
+}
+
+.passwordforgot-forgot {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.passwordforgot-forgot > a {
+  color: var(--color-azure);
+  cursor: pointer;
+}
+
+.passwordforgot-forgot > a:hover {
+  text-decoration: underline;
+}

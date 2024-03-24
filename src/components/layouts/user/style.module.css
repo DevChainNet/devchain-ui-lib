@@ -1,0 +1,18 @@
+.main {
+  margin-left: calc(var(--comp-header-nav-width) + var(--comp-header-explorer-width));
+  transition: all .3s ease;
+  padding: 1rem;
+  min-height: 100vh;
+  background-color: var(--color-charleston);
+
+}
+
+@media screen and (max-width: 650px) {
+  .main {
+    margin-left: 0;
+  }
+}
+
+.mainsidebarclosed {
+  margin-left: calc(var(--comp-header-nav-width));
+}

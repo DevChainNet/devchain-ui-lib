@@ -1,0 +1,17 @@
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://app.devchain.net</loc>
+  </sitemap>
+
+  <sitemap>
+    <loc>https://app.devchain.net/factory</loc>
+  </sitemap>
+
+  <sitemap>
+    <loc>https://app.devchain.net/swap</loc>
+  </sitemap>
+
+    <sitemap>
+    <loc>https://app.devchain.net/audit</loc>
+  </sitemap>
+</sitemapindex>
